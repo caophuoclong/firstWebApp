@@ -1,0 +1,23 @@
+{
+  "name": "summer",
+  "version": "1.0.0",
+  "description": "Day la trang web dau tien",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.9",
+    "node-persist": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caophuoclong/Self-Study/tree/Summer"
+  },
+  "author": "phuoclong",
+  "license": "ISC"
+}
