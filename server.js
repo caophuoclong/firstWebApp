@@ -10,7 +10,7 @@ const url = "mongodb://localhost:27017/";
 const db_name = "test";
 const collection_name = "test";
 app = express();
-const port = 8080;
+const port = 3000;
 
 app.use(bp.json());
 app.use(bp.urlencoded({ extend: true }));
