@@ -6,9 +6,9 @@ const bp = require('body-parser');
 const crypto = require('crypto');
 
 
-const url = "mongodb://localhost:27017/";
-const db_name = "test";
-const collection_name = "test";
+const url = "mongodb+srv://phuoclong:51648951354@cluster0.fyage.mongodb.net/User?retryWrites=true&w=majority"
+const db_name = "User";
+const collection_name = "Test";
 app = express();
 const port = 3000;
 
@@ -144,7 +144,7 @@ app.post("/signup", (req, res) => {
         if (err) throw err;
         console.log("Connect success successfully!")
         let db = client.db(db_name);
-        db.collection("test").insertOne(data,(err, collection)=>{
+        db.collection(collection_name).insertOne(data,(err, collection)=>{
             console.log("Add data successfully!");
         })
     })
